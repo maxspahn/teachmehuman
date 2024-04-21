@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "teachmehuman"
+version = "0.1.0"
+description = ""
+authors = ["Max Spahn <m.spahn@tudelft.nl>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyautogui = "^0.9.54"
+pynput = "^1.7.6"
+mss = "^9.0.1"
+
+[tool.poetry.scripts]
+rec2script = "teachmehuman.scripts.convert:rec2script"
+teachmehuman = "teachmehuman.scripts.record:record"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
