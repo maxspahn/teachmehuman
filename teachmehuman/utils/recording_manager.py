@@ -48,8 +48,22 @@ class RecordingManager():
     def _on_press(self, key):
         if key == keyboard.Key.esc:
             self.stop_recording()
-        if key == keyboard.Key.space:
+        elif key == keyboard.Key.space:
             self.start_recording()
+        else:
+            try:
+                json_object = {
+                    'action':'pressed_key', 
+                    'key': key.char, 
+                    '_time': time.time()
+                }
+                self._add_action(json_object)
+            except AttributeError:
+                json_object = {
+                    'action':'pressed_key', 
+                    'key': str(key), 
+                    '_time': time.time()
+                }
 
     def _on_release(self, key):
         print(f'on_release : {key}')

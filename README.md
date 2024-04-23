@@ -27,6 +27,11 @@ rec2py <list-of-json-files>
 
 You can now use the generated python function to automate the process.
 
+## Examples
+
+Video of hour registration automation:
+
+<video src='assets/bot_hours.mp4' width=90%/>
 
 
 
