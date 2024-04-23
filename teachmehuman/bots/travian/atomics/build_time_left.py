@@ -16,7 +16,8 @@ def build_time_left() -> Tuple[str, int]:
     time_left_pattern = re.compile(r'(\d{1}:\d{2}:\d{2})')
     # match only characters and spaces for buildng name
 
-    bulding_pattern = re.compile(r'x\s([a-zA-Z\s]+\d)')
+    # include quotation marks in the regex pattern
+    bulding_pattern = re.compile(r"x\s([a-zA-Z\s']+\d)")
     re_match = re.findall(time_left_pattern, text)
     building_match = re.findall(bulding_pattern, text)
     building_name = None
