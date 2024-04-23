@@ -29,12 +29,6 @@ You can now use the generated python function to automate the process.
 
 ## Examples
 
-Video of hour registration automation:
+Video of hour registration automation as gif:
 
-<video src='assets/bot_hours.mp4' width=90%/>
-
-[![Video Label](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://github.com/maxspahn/teachmehuman/blob/main/assets/bot_hours.mp4)
-
-
-
-
+![Bot Hours](assets/bot_hours.gif)
