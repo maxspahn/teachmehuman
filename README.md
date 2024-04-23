@@ -33,5 +33,8 @@ Video of hour registration automation:
 
 <video src='assets/bot_hours.mp4' width=90%/>
 
+[![Video Label](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://github.com/maxspahn/teachmehuman/blob/main/assets/bot_hours.mp4)
+
+
 
 
