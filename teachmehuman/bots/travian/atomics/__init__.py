@@ -1,3 +1,4 @@
+from teachmehuman.bots.travian.atomics.build_time_left import build_time_left
 from teachmehuman.bots.travian.atomics.go_to_buildings import go_to_buildings
 from teachmehuman.bots.travian.atomics.go_to_resources import go_to_resources
 
@@ -27,5 +28,6 @@ from teachmehuman.bots.travian.atomics.select_wall import select_wall
 from teachmehuman.bots.travian.atomics.upgrade_wall import upgrade_wall
 
 from teachmehuman.bots.travian.atomics.upgrade_main_building import upgrade_main_building
+from teachmehuman.bots.travian.atomics.upgrade_baracks import upgrade_baracks
 
 from teachmehuman.bots.travian.atomics.upgrade_crop import upgrade_crop

@@ -34,7 +34,10 @@ class RecordingManager():
         self._recording = True
 
     def stop_recording(self):
-        with open(f"{self._name}_{self._counter}.json", "w") as f:
+        file_name = f"{self._name}_{self._counter}.json"
+        if self._counter == 1:
+            file_name = f"{self._name}.json"
+        with open(file_name, "w") as f:
             json.dump(self._record, f)
         self._recording = False
 
@@ -62,6 +65,7 @@ class RecordingManager():
         self._add_action(json_object, force=True)
 
     def _on_move(self, x, y):
+        print(x,y)
         json_object = {
             'action':'moved', 
             'x':x, 

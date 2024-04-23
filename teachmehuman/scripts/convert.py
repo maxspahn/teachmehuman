@@ -82,7 +82,7 @@ def convert_to_pyautogui_script(file_name: str):
 
         
         if step["action"] == "clicked":
-            output.write("\ttime.sleep(0.1)\n")
+            output.write("\ttime.sleep(1.0)\n")
             output.write(f"\tpyautogui.moveTo({step['x']}, {step['y']})\n")
 
             if step["button"] == "Button.right":

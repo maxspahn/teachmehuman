@@ -9,7 +9,8 @@ readme = "README.md"
 python = "^3.8"
 pyautogui = "^0.9.54"
 pynput = "^1.7.6"
-mss = "^9.0.1"
+pytesseract = "^0.3.10"
+tqdm = "^4.66.2"
 
 [tool.poetry.scripts]
 rec2script = "teachmehuman.scripts.convert:rec2script"
