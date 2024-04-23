@@ -13,7 +13,7 @@ pytesseract = "^0.3.10"
 tqdm = "^4.66.2"
 
 [tool.poetry.scripts]
-rec2script = "teachmehuman.scripts.convert:rec2script"
+rec2py = "teachmehuman.scripts.convert:rec2script"
 teachmehuman = "teachmehuman.scripts.record:record"
 
 
